@@ -1,0 +1,12 @@
+{
+  "name": "cypress-with-slack-notifications",
+  "version": "1.0.0",
+  "description": "cypress e2e test with slack notifications",
+  "scripts": {
+
+    "test": "yarn cypress run cypress/integration/nav.spec.js --record --key 4fdf694e-31ef-413c-9d67-ca61c211c391"
+  },
+  "dependencies": {
+    "cypress": "^6.2.0"
+  }
+}

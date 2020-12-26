@@ -1,13 +1,18 @@
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@1   
+  cypress: cypress-io/cypress@1
+executors:
+  base10-user-password:
+    docker:
+      - image: 'cypress/base:10'
+    environment:
+      user: $user
+      password: $password
 workflows:
   build:
     jobs:
       - cypress/run:
-          environment:
-            user: $user
-            password: $password
+          executor: base10-user-password
           name: cypress slack
           yarn: true
           cache-key: 'yarn-packages-{{ arch }}-{{ checksum "yarn.lock" }}'

@@ -1,0 +1,11 @@
+
+{
+    "baseUrl": "https://staging.autoserve1.com",
+    "viewportWidth": 1300,
+    "viewportHeight": 900,
+    "watchForFileChanges": false,
+    "defaultCommandTimeout": 10000,
+    "pageLoadTimeout": 300000,
+    "responseTimeout": 20000,
+    "video": true
+}

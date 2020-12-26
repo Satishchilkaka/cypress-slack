@@ -4,7 +4,7 @@
   "description": "cypress e2e test with slack notifications",
   "scripts": {
 
-    "test": "yarn cypress run --spec cypress/integration/nav.spec.js,cypress/integration/test2.spec.js --record --key 4fdf694e-31ef-413c-9d67-ca61c211c391 --parallel"
+    "test": "yarn cypress run --spec cypress/integration/nav.spec.js,cypress/integration/test2.spec.js --record --key 4fdf694e-31ef-413c-9d67-ca61c211c391"
   },
   "dependencies": {
     "cypress": "^6.2.0"

@@ -15,8 +15,6 @@ workflows:
           executor: base10-user-password
           name: cypress slack
           yarn: true
-          cache-key: 'yarn-packages-{{ arch }}-{{ checksum "yarn.lock" }}'
-          command: yarn install
           command: yarn test
           browser: chrome
           parallel: true

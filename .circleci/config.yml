@@ -19,6 +19,3 @@ workflows:
           executor: base10-user-password
           command: yarn test
           browser: chrome
-          parallel: true
-          parallelism: 2
-          group: 2 machines

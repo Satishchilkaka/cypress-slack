@@ -12,9 +12,10 @@ workflows:
   build:
     jobs:
       - cypress/run:
+          name: install cypress
           command: yarn install
       - cypress/run:
-          name: cypress slack
+          name: run test
           yarn: true
           executor: base10-user-password
           command: yarn test

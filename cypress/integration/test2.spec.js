@@ -1,5 +1,5 @@
 
-describe('navigate to google', () => {
+describe.skip('navigate to google', () => {
     it('it should navigate to google', () => {
         cy.visit('www.google.com')
     })

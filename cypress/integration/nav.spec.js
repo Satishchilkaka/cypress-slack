@@ -1,5 +1,5 @@
 
-let userName = Cypress.env('user')
+let user = Cypress.env('user')
 let password = Cypress.env('password')
 const ee = Cypress.env('user')
 

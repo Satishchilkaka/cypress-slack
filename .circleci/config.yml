@@ -11,9 +11,8 @@ executors:
 workflows:
   build:
     jobs:
-      - cypress/install:
-          pre-steps:
-            - run: yarn install
+      - cypress/run:
+          command: yarn install
       - cypress/run:
           name: cypress slack
           yarn: true

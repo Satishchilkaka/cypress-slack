@@ -11,11 +11,13 @@ executors:
 workflows:
   build:
     jobs:
+      - cypress/install:
+          pre-steps:
+            - run: yarn install
       - cypress/run:
           name: cypress slack
           yarn: true
           executor: base10-user-password
-          run: yarn install
           command: yarn test
           browser: chrome
           parallel: true

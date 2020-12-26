@@ -15,6 +15,7 @@ workflows:
           name: cypress slack
           yarn: true
           executor: base10-user-password
+          run: yarn install
           command: yarn test
           browser: chrome
           parallel: true

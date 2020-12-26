@@ -8,9 +8,6 @@ describe('Navgation', () => {
         loginUser(userName, password)
     })
 
-    it('it should ', () => {
-        cy.visit('/admin')
-    })
 })
 
 function loginUser(userName, password) {

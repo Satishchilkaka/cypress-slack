@@ -8,6 +8,9 @@ describe('Navgation', () => {
         loginUser(user, password)
     })
 
+    it('Test 2 use same cre', () => {
+        loginUser(user, password)
+    })
 })
 
 function loginUser(user, password) {

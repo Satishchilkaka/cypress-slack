@@ -8,4 +8,4 @@ workflows:
           yarn: true
           verify-command: yarn cypress verify
           cache-key: 'yarn-packages-{{ arch }}-{{ checksum "yarn.lock" }}'
-          command: yarn test --env user:$user, password:$password
+          command: yarn test --env user:$user password:$password

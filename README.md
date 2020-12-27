@@ -6,6 +6,6 @@
 
  ## circleCI
 
- 1. To use the circleci use config.yml
+ 1. To use the circleci use [.circleci/config.yml](.circleci/config.yml)
  2. Set environment variables circleci
  3. Update in package.json and pass envvariables as `$var_name`

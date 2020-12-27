@@ -4,11 +4,15 @@ orbs:
 workflows:
   build:
     jobs:
+      -cypress/install:
+          build: yarn install
       - cypress/run:
           yarn: true
           verify-command: yarn cypress verify
           cache-key: 'yarn-packages-{{ arch }}-{{ checksum "yarn.lock" }}'
-          command: yarn cypress run --spec cypress/integration/nav.spec.js --env user=$user,password=$password --record --key 4fdf694e-31ef-413c-9d67-ca61c211c391
+          requires:
+            - cypress/install:
           parallel: true
           parallelism: 2
           group: 2 machines
+          command: yarn cypress run --spec cypress/integration/nav.spec.js --env user=$user,password=$password --record --key 4fdf694e-31ef-413c-9d67-ca61c211c391

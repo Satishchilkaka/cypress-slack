@@ -4,13 +4,8 @@ orbs:
 workflows:
   build:
     jobs:
-      steps:
-        - run:
-            name: "Print an env var stored in a Context"
-            command: echo ${CONTEXT_ENV_VAR}
       - cypress/run:
           yarn: true
           verify-command: yarn cypress verify
           cache-key: 'yarn-packages-{{ arch }}-{{ checksum "yarn.lock" }}'
           command: yarn test --env user:{$user}-password:{$password}
-   

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "cypress e2e test with slack notifications",
   "scripts": {
-    "circlecitest": "yarn cypress run --spec cypress/integration/nav.spec.js,cypress/integration/test2.spec.js --env user=satishc+fgdm0@autoserve1.com,password=Rupert22 -b chrome --record --key 4fdf694e-31ef-413c-9d67-ca61c211c391",
+    "circlecitest": "yarn cypress run --spec cypress/integration/nav.spec.js,cypress/integration/test2.spec.js --env user=$user,password=$password -b chrome --record --key 4fdf694e-31ef-413c-9d67-ca61c211c391",
     "test1": "yarn cypress open --require dotenv"
   },
   "dependencies": {

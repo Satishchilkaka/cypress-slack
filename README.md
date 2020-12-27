@@ -1,10 +1,10 @@
-# cypress-slack
+## cypress-slack
  cypress results to slack
 
- 1. Install slack integrtaion in cypress dashboard
- 2. Install git integrtaion in cypress dashboard
+ 1. install slack integration in cypress dashboard
+ 2. install git integration in cypress dashboard
 
- # circleci
+ ## circleCI
 
- 1. Set env variable in circle ci
- 2. Update in script
+ 1. Set environment variables circleci
+ 2. Update in package.json and pass envvariables as `$var_name`

@@ -7,9 +7,7 @@ workflows:
       - cypress/install:
           build: yarn install
       - cypress/run:
-          yarn: true
           verify-command: yarn cypress verify
-          cache-key: 'yarn-packages-{{ arch }}-{{ checksum "yarn.lock" }}'
           requires:
             - cypress/install:
           parallel: true

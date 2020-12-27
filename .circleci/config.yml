@@ -9,6 +9,7 @@ workflows:
           verify-command: yarn cypress verify
           cache-key: 'yarn-packages-{{ arch }}-{{ checksum "yarn.lock" }}'
           command: yarn test --env user:{$user}-password:{$password}
+    steps:
       - run:
           name: "Print an env var stored in a Context"
           command: echo ${CONTEXT_ENV_VAR}

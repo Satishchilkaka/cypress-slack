@@ -8,4 +8,4 @@ workflows:
           yarn: true
           verify-command: yarn cypress verify
           cache-key: 'yarn-packages-{{ arch }}-{{ checksum "yarn.lock" }}'
-          command: yarn cypress run --spec cypress/integration/nav.spec.js --env user=satishc+fgdm0@autoserve1.com,password=Rupert22 -b chrome --record --key 4fdf694e-31ef-413c-9d67-ca61c211c391
+          command: yarn cypress run --spec cypress/integration/nav.spec.js --env user=satishc+fgdm0@autoserve1.com,password=Rupert22 --record --key 4fdf694e-31ef-413c-9d67-ca61c211c391

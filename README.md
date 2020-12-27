@@ -6,5 +6,6 @@
 
  ## circleCI
 
- 1. Set environment variables circleci
- 2. Update in package.json and pass envvariables as `$var_name`
+ 1. To use the circleci use config.yml
+ 2. Set environment variables circleci
+ 3. Update in package.json and pass envvariables as `$var_name`

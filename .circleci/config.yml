@@ -41,4 +41,5 @@ workflows:
           name: cypress slack
           yarn: true
           executor: base10-user-password
+          echo $password
           command: yarn test

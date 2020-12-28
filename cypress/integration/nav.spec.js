@@ -1,25 +1,24 @@
 require('dotenv').config();
 let user = Cypress.env('user')
 let password = Cypress.env('password')
-const ee = Cypress.env('user')
+
+import {createNewTicket,loginUser} from './dir.js'
 
 describe('Navgation', () => {
+    
     it('it should navigate', () => {
+        console.log(Cypress.spec)
         loginUser(user, password)
+        
     })
 
     it('Test 2 use same cre', () => {
         loginUser(user, password)
+        createNewTicket()
     })
+  
 })
-
-function loginUser(user, password) {
-    cy.visit('as1-ui/login')
-    
-    cy.get('.login-form').within(() => {
-        cy.get('input:first').type(user, { delay: 0, force: true });
-        cy.get('input:last').type(password, { delay: 0, force: true, log: false });
-    })
-    cy.get('.btn-login').click().should('not.exist')
-    cy.wait(2000)
-}
+/* Cypress.run().then(results => {
+    var runs = results.runs[0];
+    console.log(runs)
+}) */

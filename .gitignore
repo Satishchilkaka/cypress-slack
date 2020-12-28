@@ -5,3 +5,4 @@ config.json
 cypress.env.json
 .env
 debug.log
+results.json

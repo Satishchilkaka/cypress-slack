@@ -3,7 +3,7 @@ let user = Cypress.env('user')
 let password = Cypress.env('password')
 import {createNewTicket,loginUser} from './dir.js'
 before(function fetchUser () {
-    cy.request('POST', 'https://staging.autoserve1.com/v2/api/user/login', {
+    cy.request('POST', 'https://staging.***.com/v2/api/user/login', {
       username: Cypress.env('user'),
       password: Cypress.env('password'),
     })
@@ -49,8 +49,8 @@ request(app)
   .expect('Content-Type', /json/)
   
   .expect(200, {
-    username: 'satishc+fgdm0@autoserve1.com',
-    password: "Rupert22"
+    username: user,
+    password: password
   });
     })
   })

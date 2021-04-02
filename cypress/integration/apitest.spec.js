@@ -20,7 +20,7 @@ before(function fetchUser () {
         // we can make authenticated request ourselves
         // since we know the token
           cy.request({
-            url: 'https://staging.autoserve1.com/v2/api/users',
+            url: 'https://staging.***.com/v2/api/users',
             auth: {
               bearer: user.token,
             },
@@ -43,7 +43,7 @@ before(function fetchUser () {
   })
   describe('api req', () => {
     it('get the res', () => {
-      const request = require('https://staging.autoserve1.com/v2/api')
+      const request = require('https://staging.***.com/v2/api')
 request(app)
   .post('/user/login')
   .expect('Content-Type', /json/)

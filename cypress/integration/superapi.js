@@ -9,7 +9,7 @@ describe('post', () => {
       it('post req', () => {
             const app = express();
 
-            request.post(app).post('https://staging.autoserve1.com/v2/api/user/login')
+            request.post(app).post('https://staging.***.com/v2/api/user/login')
       
             .set('Content-Type', 'application/json')
             .send('{"username": userName },{"password": userPassword}')
